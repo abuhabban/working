@@ -29,7 +29,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Put Your Token Here.
-TOKEN = "token_bot"
+TOKEN = "1378171996:AAEaihHekAb-We57_jIrHB0SnE1Nm-BDTiA"
 
 
 ####################################
