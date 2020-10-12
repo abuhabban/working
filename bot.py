@@ -61,11 +61,11 @@ def start(update: Update, context:CallbackContext):
             ct = "you are user"
             pickle.dump( ct, open(f"{file_user}pay.py", "wb" ) )
              
-            """pickle.dump( 0, open("Global.py", "wb" ) )
-            cxo = pickle.load( open("Global.py", "rb" ) )
-            a = 1
-            cxo = int(cxo) + int(a)
-            pickle.dump( cxo, open("Global.py", "wb" ) )"""
+            #pickle.dump( 0, open("Global.py", "wb" ) )
+            #cxo = pickle.load( open("Global.py", "rb" ) )
+            #a = 1
+            #cxo = int(cxo) + int(a)
+            #pickle.dump( cxo, open("Global.py", "wb" ) )
  
     first_msg = "💡To use this bot you must join this channel: @Trontreelaunching"
 
@@ -220,8 +220,8 @@ def joined(update,context):
     if (update.message.text == "📊 Statistic"):
         now = datetime.datetime.now(datetime.timezone.utc)
         ytt = now.strftime("%d/%m/%Y %H:%M")
-        cxo = pickle.load( open("Global.py", "rb" ) )
-        statext = (f"📉 <b>Bot Statistic</b>\n\n<b>📔 Total Users:</b> {cxo}\n\n<b>➖ Total Withdrawls:</b> 0.00000000\n\n<b>🕧 Server time:</b> <code>{ytt}</code>")
+        #cxo = pickle.load( open("Global.py", "rb" ) )
+        statext = (f"📉 <b>Bot Statistic</b>\n\n<b>📔 Total Users:</b> hi no data \n\n<b>➖ Total Withdrawls:</b> 0.00000000\n\n<b>🕧 Server time:</b> <code>{ytt}</code>")
         update.message.reply_text(text=statext,parse_mode=ParseMode.HTML)
              
                         
