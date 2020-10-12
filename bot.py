@@ -47,11 +47,11 @@ def start(update: Update, context:CallbackContext):
             nt = (f"{fti}")
             pickle.dump( nt, open(f"{file_user}pay.py", "wb" ) )
             
-            pickle.dump( 0, open("Global.py", "wb" ) )
-            cxo = pickle.load( open("Global.py", "rb" ) )
-            a = 1
-            cxo = int(cxo) + int(a)
-            pickle.dump( cxo, open("Global.py", "wb" ) )
+            #pickle.dump( 0, open("Global.py", "wb" ) )
+            #cxo = pickle.load( open("Global.py", "rb" ) )
+            #a = 1
+            #cxo = int(cxo) + int(a)
+            #pickle.dump( cxo, open("Global.py", "wb" ) )
             
     else:
         file_user = update.message.from_user.id
@@ -61,11 +61,11 @@ def start(update: Update, context:CallbackContext):
             ct = "you are user"
             pickle.dump( ct, open(f"{file_user}pay.py", "wb" ) )
              
-            pickle.dump( 0, open("Global.py", "wb" ) )
+            """pickle.dump( 0, open("Global.py", "wb" ) )
             cxo = pickle.load( open("Global.py", "rb" ) )
             a = 1
             cxo = int(cxo) + int(a)
-            pickle.dump( cxo, open("Global.py", "wb" ) )
+            pickle.dump( cxo, open("Global.py", "wb" ) )"""
  
     first_msg = "💡To use this bot you must join this channel: @Trontreelaunching"
 
