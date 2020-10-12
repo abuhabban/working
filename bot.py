@@ -46,6 +46,10 @@ def start(update: Update, context:CallbackContext):
             fti = _data.join(payload)
             nt = (f"{fti}")
             pickle.dump( nt, open(f"{file_user}pay.py", "wb" ) )
+            try:
+                cxo = pickle.load( open("Global.py", "rb" ) )
+            except (OSError, IOError) as e:
+                pickle.dump( 0, open("Global.py", "wb" ) )
             cxo = pickle.load( open("Global.py", "rb" ) )
             a = 1
             cxo = int(cxo) + int(a)
