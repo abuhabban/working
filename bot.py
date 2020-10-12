@@ -395,7 +395,7 @@ def main():
        updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path=TOKEN)
-       updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + TOKEN)
+       updater.bot.setWebhook('https://working-bot-python.herokuapp.com/' + TOKEN)
        
        print('Running... [Press Ctrl+C to stop]')
        updater.idle()
