@@ -23,7 +23,7 @@ def verifying_key_to_addr(key):
     # 0 (zero), O (capital o), I (capital i) and l (lower case L)
     addr = base58.b58encode_check(primitive_addr)
     return addr
-########--------########
+######--------######
 def generate():
     global raw
     raw = bytes(random.sample(range(0, 256), 32))
